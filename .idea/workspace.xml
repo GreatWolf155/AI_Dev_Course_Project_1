@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6bcef4f-766d-4bb9-9789-e95761bd174c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/AI Course Project 1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Python Exercises.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tic-Tac-Toe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/HelloWorld.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/1.2.26 E1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/1.2.26 E2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/1.2.26 E3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/1.2.26 E4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/Class Assignment - Error Handling &amp; Arrow Functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/Class Assignment - Memory Game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/Class Assignment - Python Dates &amp; Random.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/Class Assignment - Python Strings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/Python Dictionary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/Python Input.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/Restaurant Seating.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/SQL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Assignments and Test Functions/cheap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Exercise DataFrame Missing Values.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Exercise Matplotlib.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Exercise Pandas Series.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Class Exercise Pivot Table.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Date Time Methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Date, Math &amp; Strings Home Exercises.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Dictionary Methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Home Exercises/Home Exercise - Arrays.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Home Exercises/Home Exercise - Dictionaries and Tuples.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Home Exercises/Home Exercise - For &amp; While Loops.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Home Exercises/Home Exercise Template.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Home Exercises/exercises.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/MPG.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Math Methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Memory Game - Yosef.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/Modules and Methods/Array Methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/quadratic equation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../HelloWorld/recursion.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "GreatWolf155"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/GreatWolf155/Tic-Tac-Toe_Project.git",
+    "accountId": "1783e9ba-609b-4103-ba83-94b6d990c16d"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="33n8m9QsGfsIPjyYSOs2VlWstot" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Python Exercises.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Tic-Tac-Toe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.dataframe exercise.executor&quot;: &quot;Run&quot;,
+    &quot;Python.shirley.executor&quot;: &quot;Run&quot;,
+    &quot;Python.trying.executor&quot;: &quot;Run&quot;,
+    &quot;Python.yes.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6bcef4f-766d-4bb9-9789-e95761bd174c" name="Changes" comment="" />
+      <created>1759941631800</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759941631800</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Python Exercises.py</url>
+          <line>242</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
