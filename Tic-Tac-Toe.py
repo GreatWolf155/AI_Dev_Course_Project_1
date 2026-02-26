@@ -39,7 +39,6 @@ def pick_symbol():
 def board_choice(play_turn, symbol, p2, board_array):
     #whose turn it is, the symbol the current player uses,
     # player 2 (comp or user), current board
-
     choice_dict = {
         "1A": [0, 0], "1B": [0, 1], "1C": [0, 2],
         "2A": [1, 0], "2B": [1, 1], "2C": [1, 2],
