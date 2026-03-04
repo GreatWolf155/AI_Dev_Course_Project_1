@@ -22,6 +22,7 @@ def print_board(board):
         else:
             print("     |   |")
 
+# allows the player to pick a symbol
 def pick_symbol():
     while True:
         print("\n" * 50)
@@ -36,6 +37,7 @@ def pick_symbol():
             print("Invalid choice. Please enter X, O, or Pass")
             input("Press enter to continue\n")
 
+# computer or player chooses a spot on the board
 def board_choice(play_turn, symbol, p2, board_array):
     #whose turn it is, the symbol the current player uses,
     # player 2 (comp or user), current board
@@ -63,10 +65,12 @@ def board_choice(play_turn, symbol, p2, board_array):
     while True:
         try:
             choice = input("Please choose where to place your symbol\n"
-                           "acceptable options: 1B, 2C, A3\n").upper() #row and then column, in uppercase
+                           "acceptable options: 1B, 2C, A3\n"
+                           "Or type 'exit' to quit the game\n").upper() #row and then column, in uppercase
+            if choice == "EXIT":
+                return []
             if choice not in choice_dict.keys():
                 raise InvalidChoice("Please choose a valid spot")
-
             if board_array[choice_dict[choice][0]][choice_dict[choice][1]] != " ":
                 raise PreviousValue("This spot has already been played, please pick a different one")
             else:
@@ -81,6 +85,7 @@ def board_choice(play_turn, symbol, p2, board_array):
             print(e)
             continue
 
+# check for wins or cats game
 def check_board(game_array):
     # check the array for win conditions
     # returns game result as a string
@@ -98,45 +103,52 @@ def check_board(game_array):
                 return None
     return "cats game"
 
+def intro():
+    print("Welcome to")
+    board_abc = [["T", "I", "C"], ["T", "A", "C"], ["T", "O", "E"]]
+    print_board(board_abc)
+    input("Press enter to continue\n")
+    return None
 
 if __name__ == "__main__":
     playing = True
+    player_one = [" ", " ", 0]
+    player_two = [" ", " ", 0]
+    first_run = True
+    player2 = None
     while playing:
-        player_one = [" ", " "]
-        player_two = [" ", " "]
-        print("Welcome to")
+        intro()
         board_arr = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]  # sets an array for the board
-        board_abc = [["T", "I", "C"], ["T", "A", "C"], ["T", "O", "E"]]
-        print_board(board_abc)
-        player2 = None
-        input("Press enter to continue\n")
         while player2 is None:  # picking a game mode
             print("\n" * 50)
-            gamemode = input("Please enter a game mode:\n1) 1-Player\n2) 2-Player\n3) Exit\n").lower()
-            if gamemode in ["1", "one"]:
-                print("1-player mode selected")
-                player_two[0] = player2 = "comp"
-                print("Player One")
-                pick_name(player_one)
-            elif gamemode in ["2", "two"]:
-                print("2-player mode selected")
-                player2 = "user"
-                print("Player One")
-                pick_name(player_one)
-                print("Player Two")
-                pick_name(player_two)
-            elif gamemode in ["3", "exit", "quit"]:
-                playing = False
-                break
-            else:
-                print("Invalid input")
+            if first_run:
+                gamemode = input("Please enter a game mode:\n1) 1-Player\n2) 2-Player\n3) Exit\n").lower()
+                if gamemode in ["1", "one"]:
+                    print("1-player mode selected")
+                    player_two[0] = player2 = "comp"
+                    print("Player One")
+                    pick_name(player_one)
+                elif gamemode in ["2", "two"]:
+                    print("2-player mode selected")
+                    player2 = "user"
+                    print("Player One")
+                    pick_name(player_one)
+                    print("Player Two")
+                    pick_name(player_two)
+                elif gamemode in ["3", "exit", "quit"]:
+                    playing = False
+                    break
+                else:
+                    print("Invalid input")
+                first_run = False
         if player2 is None:
             break
+
         options = ["X", "O"]
         player_one[1] = pick_symbol()
-
         options.remove(player_one[1])
         player_two[1] = options[0]
+
         turn_count = 1
         game = True
         while game: # Let's start playing here
@@ -153,6 +165,16 @@ if __name__ == "__main__":
                     print(f"Comp's ({current_symbol}) turn\n")
 
             board_arr = board_choice(player_turn, current_symbol, player2, board_arr)
+            if board_arr == []:
+                print("\n" * 50)
+                print("FORFEIT DETECTED!")
+                if player_turn == 1:
+                    player_two[2] += 1
+                    print(f"{player_one[0]} quit. Point goes to {player_two[0]}!")
+                else:
+                    player_one[2] += 1
+                    print(f"{player_two[0]} quit. Point goes to {player_one[0]}!")
+                break
 
             input("Press enter to continue\n")
 
@@ -163,8 +185,10 @@ if __name__ == "__main__":
 
             if game_status == "win":
                 if player_turn == 1:
+                    player_one[2] += 1
                     print(f"{player_one[0]} ({current_symbol}) wins!\n")
                 else:
+                    player_two[2] += 1
                     current_symbol = player_two[1]
                     if player2 != "comp":
                         print(f"{player_two[0]} ({current_symbol}) wins!\n")
@@ -179,6 +203,8 @@ if __name__ == "__main__":
                 break
 
         while True:
+            print("SCOREBOARD")
+            print(f"{player_one[0].capitalize()}: {player_one[2]}\n{player_two[0].capitalize()}: {player_two[2]}")
             game_end = input("Do you want to play again?\n"
                              "1) Yes\n"
                              "2) No\n").upper()
