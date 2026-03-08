@@ -17,19 +17,26 @@ choice_dict_options = {
     "A3": [2, 0], "B3": [2, 1], "C3": [2, 2]
 }
 
-# players can choose names for themselves
-def pick_name(player, opponent_name = None):
+def pick_name(opponent_name = None) -> str:
+    """
+    # players can choose names for themselves
+    :param opponent_name: specifically to check if the name is taken
+    :return: str - player name
+    """
     while True:
-        player[0] = str(input("Please enter your name:\n"))
-        if len(player[0]) == 0:
+        player_name = str(input("Please enter your name:\n"))
+        if len(player_name) == 0:
             print("Please enter a valid name.")
-        elif player[0] == opponent_name:
+        elif player_name == opponent_name:
             print("That name is already taken.")
-        return player
+        return player_name
 
-
-#prints the current board
-def print_board(board):
+def print_board(board) -> None:
+    """
+    prints the current board
+    :param board: 2D list containing the board symbols
+    :return: None
+    """
     print("   A   B   C")
     for i in range(0, 3):
         # REMINDER: board[row][col]
@@ -39,8 +46,11 @@ def print_board(board):
         else:
             print("     |   |")
 
-# allows the player to pick a symbol
-def pick_symbol():
+def pick_symbol() -> str:
+    """
+    player chooses a symbol or can choose to pass
+    :return: player symbol
+    """
     while True:
         print("\n" * 50)
         choice = input("Player 1, please pick a symbol\n1) X\n2) O\n3) Pass\n").upper()
@@ -52,10 +62,18 @@ def pick_symbol():
             return random.choice(["X", "O"])
         else:
             print("Invalid choice. Please enter X, O, or Pass")
-            input("Press enter to continue\n")
+            input("Press enter to return\n")
 
-# computer or player chooses a spot on the board
-def board_choice(play_turn, symbol, p2, board_array, choice_dict):
+def board_choice(play_turn, symbol, p2, board_array, choice_dict) -> list:
+    """
+    current player can choose a spot to take
+    :param play_turn: current player turn
+    :param symbol: current player's symbol
+    :param p2: str - to check if player 2 is computer
+    :param board_array: the board layout
+    :param choice_dict: all the different options to choose from
+    :return: the new board array
+    """
     #whose turn it is, the symbol the current player uses,
     # player 2 (comp or user), current board
     if play_turn == 2 and p2 == "comp": #computer turn
@@ -69,7 +87,7 @@ def board_choice(play_turn, symbol, p2, board_array, choice_dict):
         print_board(board_array)
         return board_array
 
-    #players turn - no if here
+    #players turn - no 'if' here
     print_board(board_array)
     while True:
         try:
@@ -94,10 +112,12 @@ def board_choice(play_turn, symbol, p2, board_array, choice_dict):
             print(e)
             continue
 
-# check for wins or cats game
-def check_board(game_array):
-    # check the array for win conditions
-    # returns game result as a string
+def check_board(game_array) -> str | None:
+    """
+    check the array for win conditions
+    :param game_array: 2D list containing the board
+    :return: str - game result
+    """
     for i in range(3): # check rows
         if game_array[i][0] != " " and game_array[i][0] == game_array[i][1] == game_array[i][2]:
             return "win"
@@ -132,14 +152,14 @@ def gamemode_select(player_1, player_2, is_first_game):
                 print("1-player mode selected")
                 player_2[0] = player2_status = "comp"
                 print("Player One")
-                pick_name(player_1)
+                player_1[0] = pick_name()
             elif gamemode in ["2", "two"]:
                 print("2-player mode selected")
                 player2_status = "user"
                 print("Player One")
-                pick_name(player_1)
+                player_1[0] = pick_name()
                 print("Player Two")
-                pick_name(player_2, player_1[0])
+                player_2[0] = pick_name(player_1[0])
             elif gamemode in ["3", "exit", "quit"]:
                 play = False
                 break
