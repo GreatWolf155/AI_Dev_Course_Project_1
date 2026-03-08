@@ -132,16 +132,25 @@ def check_board(game_array) -> str | None:
                 return None
     return "cats game"
 
-# intro page
-def intro():
+def intro() -> None:
+    """
+    print out a cool intro page
+    :return:
+    """
     print("Welcome to")
     board_abc = [["T", "I", "C"], ["T", "A", "C"], ["T", "O", "E"]]
     print_board(board_abc)
     input("Press enter to continue\n")
     return None
 
-# decide on a game mode
-def gamemode_select(player_1, player_2, is_first_game):
+def gamemode_select(player_1, player_2, is_first_game) -> tuple:
+    """
+    select a game mode or exit, and set player names
+    :param player_1: list - for changing player name
+    :param player_2: list - for changing player name
+    :param is_first_game: only go to change names for the first game
+    :return: tuple(bool - play, list - player_1, list - player_2, bool - is_first_game)
+    """
     player2_status = None
     play = True
     while player2_status is None:  # picking a game mode
@@ -174,14 +183,21 @@ def gamemode_select(player_1, player_2, is_first_game):
         return False, player_1, player_2, None
     return play, player_1, player_2, player2_status
 
-# player 1 can choose which symbol to use
-def choose_symbol():
+def choose_symbol() -> tuple:
+    """
+    player chooses a symbol
+    :return: tuple - symbols for both players
+    """
     options = ["X", "O"]
     p1_symbol = pick_symbol()
     options.remove(p1_symbol)
     return p1_symbol, options[0]
 
-def main():
+def main() -> None:
+    """
+    main function
+    :return: None
+    """
     playing = True
     player_one = [" ", " ", 0]
     player_two = [" ", " ", 0]

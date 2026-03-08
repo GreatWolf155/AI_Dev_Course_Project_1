@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6bcef4f-766d-4bb9-9789-e95761bd174c" name="Changes" comment="more functions">
+    <list default="true" id="c6bcef4f-766d-4bb9-9789-e95761bd174c" name="Changes" comment="started docstrings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tic-Tac-Toe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tic-Tac-Toe.py" afterDir="false" />
     </list>
@@ -108,13 +108,22 @@
       <option name="project" value="LOCAL" />
       <updated>1772986123242</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="started docstrings">
+      <option name="closed" value="true" />
+      <created>1772990220567</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1772990220567</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="memory game and tic tac toe complete&#10;&#10;awaiting review for any changes that should be made" />
     <MESSAGE value="awaiting review for any changes that should be made" />
     <MESSAGE value="more functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="more functions" />
+    <MESSAGE value="started docstrings" />
+    <option name="LAST_COMMIT_MESSAGE" value="started docstrings" />
   </component>
 </project>
