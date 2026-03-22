@@ -1,5 +1,6 @@
 import random
 
+
 class PreviousValue(Exception):
     """player attempted to choose an occupied space"""
     pass
